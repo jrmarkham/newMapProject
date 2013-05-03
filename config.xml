@@ -7,7 +7,7 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>test jq2</name>
+    <name>test jq3</name>
 	
 	<preference name="orientation" value="landscape" />
 	
