@@ -7,7 +7,7 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>App Test</name>
+    <name>test jq</name>
 	
 	<preference name="orientation" value="landscape" />
 	
