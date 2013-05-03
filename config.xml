@@ -7,7 +7,7 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>test map3</name>
+    <name>Map</name>
 	
 	<preference name="orientation" value="landscape" />
 	
