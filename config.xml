@@ -7,7 +7,7 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Map App in Phone Gap</name>
+    <name>App Test</name>
 	
 	<preference name="orientation" value="landscape" />
 	
