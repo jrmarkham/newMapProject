@@ -1,0 +1,192 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	color:#F00;
+}
+
+#test{
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100px;
+	height::50px;
+	background-color:#0066CC;
+	color:#FFFFFF;	
+	
+}
+
+
+.locationList{           
+    list-style-type:none;
+    }
+
+
+.dot{
+		position:relative;
+		float:right;
+		right:5px;
+		top:0px;
+		width:15px;
+		height:15px;
+   		border-radius:10px;			    	
+	}
+	
+	#officeDot{
+		background-color:#FF0;
+	}
+	
+	#WDLDot{
+		background-color:#0F0;
+		
+	}
+	
+	#retailDot{
+		background-color:#F0F;
+	}
+	
+	#corpOfficeDot{
+		background-color:#F00;
+	}
+
+#uiToggle{
+    position:fixed;  
+    border-left:solid gray 2px;
+    border-right:solid gray 2px;
+    border-bottom:solid gray 2px;
+    border-bottom-right-radius: 25px;			    
+    border-bottom-left-radius: 25px;	
+    padding:2px;			  
+    top:0px;
+    left:25%;
+    width:50%;
+    height:25px;
+    text-align:center;	
+    background-color:#CCC;
+    cursor:pointer;	
+    visibility: hidden;
+    }    
+
+#mapCanvas {
+
+    position:absolute;
+    top:0px;
+    left:0%;
+    width:100%;
+    height:100%;
+    }
+
+#mapContainer {
+    position:absolute;   
+    top:0px;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    }
+
+
+#picContainer {
+    position:absolute;   
+    left:25px;
+    top:25px;
+    width:664px;
+    height:500px;
+    background-repeat:no-repeat;
+    overflow: hidden;
+    cursor:pointer;	
+    } 
+
+#mapInfoShell{	 
+    position:absolute;  
+    border:solid gray 3px;
+    border-radius: 15px;			  
+    top:10%;
+    width:30%;
+    height:70%;
+    right:5%;
+    background-color:rgba(255,255,255,0.85);
+    visibility:hidden;
+    }
+
+
+#mapInfo{	 
+    position:absolute;  
+    top:10%;
+    width:90%;
+    height:85%;
+    left:5%;
+    overflow:auto;
+    overflow-x:hidden;
+    }
+
+#mapInfoClose{
+    position:absolute;  
+    top:2px;
+    width:25px;
+    height:25px;
+    line-height: 25px;
+    vertical-align: middle;	
+    color:#FF0000;		
+    right:2px;
+    text-align:center;
+    vertical-align:central;
+    font-size:1.4em;
+    cursor:pointer;	
+    }
+
+#mapInfoSubHeader{	 
+    font-weight: bold;
+    }
+
+#mapInfoSubLine,#mapInfoPharagraph, #mapInfoSubHeader{
+    font-size:12pt;
+    color: #66C;
+    }		 
+
+#uiCanvas{ 
+    position:absolute;  
+    border:solid gray 3px;
+    border-radius: 25px;			  
+    top:15%;
+    width:40%;
+	height:80%;
+    left:30%;
+    background-color:rgba(255,255,255,0.85);
+    visibility:hidden;
+    }
+
+#uiContainer{ 
+    position:absolute;  		  
+    top:5%;
+    left:5%;
+    width:90%;
+    height:auto;
+    overflow:auto;
+    }		  
+
+
+#typeHeader{
+    position:relative;
+    font-weight:lighter;
+    font-size:20pt;
+    border-bottom:solid red 1px;
+    color:#F00;  
+    }
+
+
+#propHeader, #geoHeader{
+    position:relative;
+    font-weight: bold;
+    font-size:12pt;
+    color: #005990;  
+    }		
+
+.listItem, .geoItem{
+    position:relative;
+    font-weight:normal; 
+    font-size:12pt;
+    color: #005990;
+    margin-left: 20px;
+    cursor:pointer;
+    }
