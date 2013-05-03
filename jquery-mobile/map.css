@@ -3,18 +3,6 @@
 
 body {
     font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-	color:#F00;
-}
-
-#test{
-	position:fixed;
-	left:0px;
-	top:0px;
-	width:100px;
-	height::50px;
-	background-color:#0066CC;
-	color:#FFFFFF;	
-	
 }
 
 
