@@ -89,7 +89,7 @@
         };
 		
 
-		$.getJSON('jquery-mobile/file.JSON',function(data) {
+		$.getJSON('http://idesignmatters.com/mobile/_js/file.JSON',function(data) {
 	  		dataJSONObj = data;
 			createDataGrid();
 		});
