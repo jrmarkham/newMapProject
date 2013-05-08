@@ -102,6 +102,9 @@
         $('#geoHeader').html("Geogrpahical Regions<br>(all property types)");
         $('#uiToggle').html("UI Toggle");
       
+	  
+	  	$('#keepOpen').html("<input class='cbox' type='checkbox' id='ko'/><label for='ko'>Keep Open</label>");
+	  
         $('.locationList').click(function(){
             var id = $(this).attr('id');
             if ('us' == id){
@@ -418,11 +421,10 @@
 	 }
 	 
 	 function hideUi(){
-		$('#uiCanvas').css('visibility','hidden');	
-		$('#uiToggle').css('visibility','visible');
-		
-
-		 
+		if(!ko.checked){
+			$('#uiCanvas').css('visibility','hidden');	
+			$('#uiToggle').css('visibility','visible');
+		}
 	 }	 
 	
 	function closeInfo(){

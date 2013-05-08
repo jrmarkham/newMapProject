@@ -46,6 +46,7 @@ body {
     }
 
 
+
 #picContainer {
     position:absolute;   
     left:25px;
@@ -123,6 +124,12 @@ body {
     overflow:auto;
     }		  
 
+
+#keepOpen{
+    position:absolute;   
+    right:10px;
+    top:0px;
+}
 
 #typeHeader{
     position:relative;
