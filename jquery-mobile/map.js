@@ -561,6 +561,8 @@
 		return l;
 	}
 	
+	/*
+	
 	function showAllMarkers() {
 		  if (markersArray) {
 			for (i in markersArray) {
@@ -583,7 +585,7 @@
 		  }
 		  
 		  hideUi();
-		}		
+		}		*/
 	
 	function getInfo(n){
 		var contentString = "<div><div id='mapInfoSubHeader'>Property Name</div>";
