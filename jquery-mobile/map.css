@@ -12,17 +12,16 @@ body {
 
 #uiToggle{
     position:fixed;  
-    border-left:solid gray 2px;
-    border-right:solid gray 2px;
-    border-bottom:solid gray 2px;
-    border-bottom-right-radius: 25px;			    
-    border-bottom-left-radius: 25px;	
+    border:solid gray 2px;
+    border-radius: 25px;			    
     padding:2px;			  
-    top:0px;
+    top:10px;
     left:25%;
     width:50%;
     height:25px;
     text-align:center;	
+    line-height: 25px;
+    vertical-align: middle;		
     background-color:#CCC;
     cursor:pointer;	
     visibility: hidden;
@@ -153,12 +152,15 @@ body {
     font-size:12pt;
     color: #005990;
     margin-left: 20px;
-    cursor:pointer;
     }
 	
 .locationList{           
     list-style-type:none;
-    }
+/*	padding:2px;
+	width:auto;
+	background-color:#999;	
+	border-radius:2px;	*/
+}
 
 
 
