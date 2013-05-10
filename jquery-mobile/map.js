@@ -103,7 +103,22 @@
         $('#uiToggle').html("UI Toggle");
       
 	  
-	  	$('#keepOpen').html("<input class='cbox' type='checkbox' id='ko'/><label for='ko'>Keep Open</label>");
+	  	$('#shift').html("<div id='top'><div id='left'>LEFT</div><div id='center'>CENTER</div><div id='right'>RIGHT</div></div>");
+	  
+	  	$('#shift').append("<div id='bottom'><input class='cbox' type='checkbox' id='ko'/><label for='ko'>Keep Open</label></div>");
+		
+		$('#left').click(function(){
+			$('#uiCanvas').css('left', '5%');
+		});
+		
+		$('#center').click(function(){
+			$('#uiCanvas').css('left', '30%');
+		});
+				
+		
+		$('#right').click(function(){
+			$('#uiCanvas').css('left', '55%');
+		});		
 	  
         $('.locationList').click(function(){
             var id = $(this).attr('id');
@@ -195,20 +210,13 @@
 		 $('cbox').click(runMarkers);
 		 
 		 
-		  $('#picContainer').click(function(){
-			closeInfo();
-		  });
-		  
-		  $('#mapInfoClose').click(function(){
-			closeInfo();
-		  });
+		  $('#picContainer, #mapInfoClose').click(closeInfo);
 		  
 		  
 		  $('#uiToggle').click(showUi);		 
 		  
 		loadRegion("United States");
-       
-	   
+
 	   /// SWITCH ALL CSS VISIBLE //// 
 		  
 	  }
@@ -412,7 +420,6 @@
 	}
 
 
-
 	 function showUi(){
 		$('#uiCanvas').css('visibility','visible');
 		$('#uiToggle').css('visibility','hidden');
@@ -424,6 +431,9 @@
 		if(!ko.checked){
 			$('#uiCanvas').css('visibility','hidden');	
 			$('#uiToggle').css('visibility','visible');
+		//	$('#uiCanvas').css('background','rgba(255,255,255,0.85)');
+		}else{
+		//	$('#uiCanvas').css('background','rgba(255,255,255,0.65)');
 		}
 	 }	 
 	
