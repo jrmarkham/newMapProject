@@ -354,20 +354,21 @@
 		
 		
 		var marker = new google.maps.Marker({
-				position: spot,
-				animation: google.maps.Animation.DROP,
-				title:dataJSONObj[n].companyName,
-				icon:typeIcon
-			});	  
-		  markersArray.push(marker);
+			position: spot,
+			animation: google.maps.Animation.DROP,
+			title:dataJSONObj[n].companyName,
+			icon:typeIcon
+		});	  
+		
+		markersArray.push(marker);
 			  
-		 google.maps.event.addListener(marker, 'click', function() {
-			 	addInfoDiv(n);
-			});		  
+		google.maps.event.addListener(marker, 'click', function() {
+	 		addInfoDiv(n);
+		});		  
 		  
 
 		  
-	  }
+	}
 	
 	function clearPropertyChecks(){
 		 p0.checked = false;
